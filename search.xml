@@ -5,23 +5,10 @@
     
     <entry>
       <title>我的博客中午</title>
-      <link href="/2024/01/02/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8D%88/"/>
-      <url>/2024/01/02/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8D%88/</url>
+      <link href="/2024/01/02/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8D%881/"/>
+      <url>/2024/01/02/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8D%881/</url>
       
-        <content type="html"><![CDATA[<p>这是中文</p><p><code>library base</code></p><p>$ x+y= z$</p><p><a href="https://www.baidu.com">https://www.baidu.com</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的博客中午</title>
-      <link href="/2024/01/02/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8D%88%20-%20%E5%89%AF%E6%9C%AC/"/>
-      <url>/2024/01/02/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8D%88%20-%20%E5%89%AF%E6%9C%AC/</url>
-      
-        <content type="html"><![CDATA[<p>这是中文</p><p><code>library base</code></p><p>$ x+y= z$</p><p><a href="https://www.baidu.com">https://www.baidu.com</a></p>]]></content>
+        <content type="html"><![CDATA[<p>这是中文</p><p><code>library base</code></p><p>$$x+y=z$$</p><p><a href="https://www.baidu.com">https://www.baidu.com</a></p>]]></content>
       
       
       
