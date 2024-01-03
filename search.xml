@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>基于6S管理模式的口腔临床研究</title>
+      <link href="/2024/01/04/6S%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%B8%B4%E5%BA%8A%E7%A0%94%E7%A9%B6/"/>
+      <url>/2024/01/04/6S%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%B8%B4%E5%BA%8A%E7%A0%94%E7%A9%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 align=center>基于6S管理模型的口腔护理临床研究</h1><h2 id="1、研究三要素">1、研究三要素</h2><h3 id="研究对象">研究对象</h3><p>本研究对象包括<em><strong>护理人员</strong></em>、<em><strong>医生</strong></em>以及<em><strong>患者</strong></em>。</p><h3 id="研究措施">研究措施</h3><p>本研究的干预措施为是否进行6S管理模式进行临床护理管理。</p><p><font color='green'><em><strong>Tips:要比较6S管理模型实施前后的效果需要在研究设计初期设计好评价体系，这可能是研究需要细化的内容</strong></em></font></p><h3 id="结局指标">结局指标</h3><ul class="lvl-0"><li class="lvl-2"><p><input type="checkbox" id="checkbox0"><label for="checkbox0">主要结局指标：</label><strong>护理质量评分(6S体系)</strong></p></li><li class="lvl-2"><p><input type="checkbox" id="checkbox1"><label for="checkbox1">次要结局指标：</label><strong>医生满意度</strong>、<strong>患者满意度</strong></p></li></ul><p><font color='green'><em><strong>Tips:6S评价体系内涵</strong></em></font></p><p><font color='green'><em><strong>6S</strong></em>管理源于<em><strong>5S</strong></em>管理,整理 (<strong>S</strong>EIRI)、在整顿 (<strong>S</strong>EITON) 、清扫 (<strong>S</strong>EISO) 、清洁(<strong>S</strong>EIKETSU) 、素养(<strong>S</strong>HITSUKE) 基础上增加了安全(<strong>S</strong>ECURITY)。</font></p><h2 id="2、实施方法">2、实施方法</h2><p>制定实施方案。。。。。。。。。</p><h2 id="3、结果分析">3、结果分析</h2><h3 id="统计分析方法">统计分析方法</h3><p>应用统计软件SPSS23.0进行数据分析，计量资料采用t检验，P&lt;0.05表示差异有统计学意义。。。。。。。。。</p><h3 id="6S实施前后结局指标的比较">6S实施前后结局指标的比较</h3><table><thead><tr><th></th><th>护理质量</th><th>医生满意度</th><th>患者满意度</th><th style="text-align:center">P值</th></tr></thead><tbody><tr><td>实施前</td><td>均数±标准差</td><td>均数±标准差</td><td>均数±标准差</td><td style="text-align:center"></td></tr><tr><td>实施后</td><td>均数±标准差</td><td>均数±标准差</td><td>均数±标准差</td><td style="text-align:center"></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 临床研究 </category>
+          
+          <category> 方案设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Typora </tag>
+            
+            <tag> 解决方案 </tag>
+            
+            <tag> 临床研究 </tag>
+            
+            <tag> 6S管理模式 </tag>
+            
+            <tag> 6S management </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo渲染报错解决方案</title>
       <link href="/2024/01/03/Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
       <url>/2024/01/03/Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
@@ -33,41 +68,6 @@
             <tag> 报错 </tag>
             
             <tag> 解决方案 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>基于6S管理模式的口腔临床研究</title>
-      <link href="/2024/01/03/6S%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%B8%B4%E5%BA%8A%E7%A0%94%E7%A9%B6/"/>
-      <url>/2024/01/03/6S%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%B8%B4%E5%BA%8A%E7%A0%94%E7%A9%B6/</url>
-      
-        <content type="html"><![CDATA[<h1 align=center>基于6S管理模型的口腔护理临床研究</h1><h2 id="1、研究三要素">1、研究三要素</h2><h3 id="研究对象">研究对象</h3><p>本研究对象包括<em><strong>护理人员</strong></em>、<em><strong>医生</strong></em>以及<em><strong>患者</strong></em>。</p><h3 id="研究措施">研究措施</h3><p>本研究的干预措施为是否进行6S管理模式进行临床护理管理。</p><p><font color='green'><em><strong>Tips:要比较6S管理模型实施前后的效果需要在研究设计初期设计好评价体系，这可能是研究需要细化的内容</strong></em></font></p><h3 id="结局指标">结局指标</h3><ul class="lvl-0"><li class="lvl-2"><p><input type="checkbox" id="checkbox0"><label for="checkbox0">主要结局指标：</label><strong>护理质量评分(6S体系)</strong></p></li><li class="lvl-2"><p><input type="checkbox" id="checkbox1"><label for="checkbox1">次要结局指标：</label><strong>医生满意度</strong>、<strong>患者满意度</strong></p></li></ul><p><font color='green'><em><strong>Tips:6S评价体系内涵</strong></em></font></p><p><font color='green'><em><strong>6S</strong></em>管理源于<em><strong>5S</strong></em>管理,整理 (<strong>S</strong>EIRI)、在整顿 (<strong>S</strong>EITON) 、清扫 (<strong>S</strong>EISO) 、清洁(<strong>S</strong>EIKETSU) 、素养(<strong>S</strong>HITSUKE) 基础上增加了安全(<strong>S</strong>ECURITY)。</font></p><h2 id="2、实施方法">2、实施方法</h2><p>制定实施方案。。。。。。。。。</p><h2 id="3、结果分析">3、结果分析</h2><h3 id="统计分析方法">统计分析方法</h3><p>应用统计软件SPSS23.0进行数据分析，计量资料采用t检验，P&lt;0.05表示差异有统计学意义。。。。。。。。。</p><h3 id="6S实施前后结局指标的比较">6S实施前后结局指标的比较</h3><table><thead><tr><th></th><th>护理质量</th><th>医生满意度</th><th>患者满意度</th><th style="text-align:center">P值</th></tr></thead><tbody><tr><td>实施前</td><td>均数±标准差</td><td>均数±标准差</td><td>均数±标准差</td><td style="text-align:center"></td></tr><tr><td>实施后</td><td>均数±标准差</td><td>均数±标准差</td><td>均数±标准差</td><td style="text-align:center"></td></tr></tbody></table>]]></content>
-      
-      
-      <categories>
-          
-          <category> 临床研究 </category>
-          
-          <category> 方案设计 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Typora </tag>
-            
-            <tag> 解决方案 </tag>
-            
-            <tag> 临床研究 </tag>
-            
-            <tag> 6S管理模式 </tag>
-            
-            <tag> 6S management </tag>
             
         </tags>
       
