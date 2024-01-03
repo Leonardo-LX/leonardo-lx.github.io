@@ -4,11 +4,48 @@
   
     
     <entry>
-      <title>利用i5ting_toc插件将md转换成html文件</title>
-      <link href="/2024/01/03/i5ting_toc%E6%8F%92%E4%BB%B6%E5%B0%86md%E8%BD%AC%E6%8D%A2%E6%88%90html%E6%96%87%E4%BB%B6/"/>
-      <url>/2024/01/03/i5ting_toc%E6%8F%92%E4%BB%B6%E5%B0%86md%E8%BD%AC%E6%8D%A2%E6%88%90html%E6%96%87%E4%BB%B6/</url>
+      <title>Hexo渲染报错解决方案</title>
+      <link href="/2024/01/03/Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+      <url>/2024/01/03/Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
       
-        <content type="html"><![CDATA[<h1></h1><p><font color='green'>Tips: 安装前需要确定系统安装了Node.js，因为需要使用npm包管理器。</font></p><h1>1、插件安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install i5ting_toc</span><br></pre></td></tr></table></figure><p>安装成功！</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ npm install i5ting_toc -g</span><br><span class="line"></span><br><span class="line">added 17 packages <span class="keyword">in</span> 53s</span><br><span class="line"></span><br><span class="line">1 package is looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br></pre></td></tr></table></figure><h1>2、执行转换命令</h1><p><font color='green'>Tips: 需要跳转到待转换文件的地址，再执行如下命令。经过测试Windows下直接输入文件地址，似乎会出现意外。</font></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i5ting_toc -f *.md <span class="comment">#转换该目录下全部md文件为html文件</span></span><br></pre></td></tr></table></figure><p>转换结果：</p><p><img src="/images/image-20240103112023258.png" alt="image-20240103112023258"></p><p><img src="/images/image-20240103112217074.png" alt="image-20240103112217074"></p><h1>3、移动html文件</h1><p>转换后会在该目录下生成<font color='red'>preview</font>文件夹,转换成功后的html就在<font color='red'>preview</font>文件夹下。移动同名html文件到你的目标地址即可完成转换。</p>]]></content>
+        <content type="html"><![CDATA[<p><font color='green'>Tips: 本文的解决方案肯定不是最优解，泛化能力很差，但仅仅有一点作用。</font></p><h1>1、hexo渲染gitalk报错</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something<span class="string">&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span></span><br><span class="line"><span class="string">TypeError: Cannot read properties of undefined (reading &#x27;</span>gitalk<span class="string">&#x27;)</span></span><br></pre></td></tr></table></figure><p>问题分析</p><p>出现该问题肯定是由于您安装了gitalk的插件<em><strong>hexo-plugin-gitalk</strong></em>，并且在运行hexo g或者 hexo s时报错。根据报错内容应该是插件内<em><strong>index.js</strong></em>出现了错误。原因不明，请大佬指出。</p><p>解决方案</p><ol><li class="lvl-3"><p><strong>移动</strong>插件内的index.js文件</p></li><li class="lvl-3"><p>重新运行渲染命令 hexo g 或者 hexo s</p></li><li class="lvl-3"><p>将index.js移动回原先的路径</p></li><li class="lvl-3"><p>再次运行渲染命令</p></li></ol><p><font color='green'>Tips: 在<em><strong>第2步</strong></em>会有如下报错：</font></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR Plugin load failed: hexo-plugin-gitalk</span><br><span class="line">Error: EISDIR: illegal operation on a directory, read</span><br></pre></td></tr></table></figure><p><font color='green'>请忽视，在<em><strong>第4步</strong></em>会运行成功且无报错。</font></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络工具 </category>
+          
+          <category> 网页制作 </category>
+          
+          <category> Hexo排错 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Typora </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> hexo g </tag>
+            
+            <tag> 报错 </tag>
+            
+            <tag> 解决方案 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>利用i5ting_toc插件将md转换成html文件</title>
+      <link href="/2024/01/03/i5ting_toc%E6%8F%92%E4%BB%B6%E5%B0%86md%E8%BD%AC%E6%8D%A2%E6%88%90html%E6%96%87%E4%BB%B6%20-%20%E5%89%AF%E6%9C%AC/"/>
+      <url>/2024/01/03/i5ting_toc%E6%8F%92%E4%BB%B6%E5%B0%86md%E8%BD%AC%E6%8D%A2%E6%88%90html%E6%96%87%E4%BB%B6%20-%20%E5%89%AF%E6%9C%AC/</url>
+      
+        <content type="html"><![CDATA[<p><font color='green'>Tips: 安装前需要确定系统安装了Node.js，因为需要使用npm包管理器。</font></p><h1>1、插件安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install i5ting_toc</span><br></pre></td></tr></table></figure><p>安装成功！</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ npm install i5ting_toc -g</span><br><span class="line"></span><br><span class="line">added 17 packages <span class="keyword">in</span> 53s</span><br><span class="line"></span><br><span class="line">1 package is looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br></pre></td></tr></table></figure><h1>2、执行转换命令</h1><p><font color='green'>Tips: 需要跳转到待转换文件的地址，再执行如下命令。经过测试Windows下直接输入文件地址，似乎会出现意外。</font></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i5ting_toc -f *.md <span class="comment">#转换该目录下全部md文件为html文件</span></span><br></pre></td></tr></table></figure><p>转换结果：</p><p><img src="/images/image-20240103112023258.png" alt="image-20240103112023258"></p><p><img src="/images/image-20240103112217074.png" alt="image-20240103112217074"></p><h1>3、移动html文件</h1><p>转换后会在该目录下生成<font color='red'>preview</font>文件夹,转换成功后的html就在<font color='red'>preview</font>文件夹下。移动同名html文件到你的目标地址即可完成转换。</p><h1 align=center>后续1</h1><p>如果使用typora编辑器，可以直接<u><strong>导出</strong></u>为html格式，不用i5ting_toc插件转换。</p>]]></content>
       
       
       <categories>
@@ -31,6 +68,8 @@
             <tag> html </tag>
             
             <tag> 格式转换 </tag>
+            
+            <tag> Typora </tag>
             
         </tags>
       
