@@ -5,8 +5,8 @@
     
     <entry>
       <title>科学文章集锦</title>
-      <link href="/2024/01/04/%E7%A7%91%E5%AD%A6%E6%96%87%E7%AB%A0%E9%9B%86%E9%94%A6/"/>
-      <url>/2024/01/04/%E7%A7%91%E5%AD%A6%E6%96%87%E7%AB%A0%E9%9B%86%E9%94%A6/</url>
+      <link href="/2024/01/04/ScientificReports/"/>
+      <url>/2024/01/04/ScientificReports/</url>
       
         <content type="html"><![CDATA[<h1 align=center>科研方法推文集锦</h1><h2 id="1、文章作用">1、文章作用</h2><p>本文章是用来记录自己看到的比较有深度和内涵的科研推文的，有空了可以那起文章来温习温习。也可以在茫茫研海中寻找那一盏明灯！</p><h2 id="2、文章链接">2、文章链接</h2><p>2.1、临床科研中的<strong>临床意义</strong>和<strong>统计学意义</strong></p><p><a href="https://mp.weixin.qq.com/s/zGXyc25dNlq86GqOqwd35A">https://mp.weixin.qq.com/s/zGXyc25dNlq86GqOqwd35A</a></p>]]></content>
       
@@ -36,8 +36,8 @@
     
     <entry>
       <title>修改DNS方法解决访问GitHub问题</title>
-      <link href="/2024/01/04/%E4%BF%AE%E6%94%B9DNS%E8%AE%BF%E9%97%AEGitHub/"/>
-      <url>/2024/01/04/%E4%BF%AE%E6%94%B9DNS%E8%AE%BF%E9%97%AEGitHub/</url>
+      <link href="/2024/01/04/modifyDNS/"/>
+      <url>/2024/01/04/modifyDNS/</url>
       
         <content type="html"><![CDATA[<h1 align=center>Windows下通过修改DNS访问GitHub</h1><h2 id="1、本方法需要使用的工具">1、本方法需要使用的工具</h2><p>站长之家</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://ip.tool.chinaz.com/</span><br></pre></td></tr></table></figure><h2 id="2、问题描述">2、问题描述</h2><p>​    由于墙的原因导致GitHub的DNS被污染，国内没有服务商来解析GitHub的IP地址。这是造成我们无法访问GitHub的主要原因，那么我们可以自己把IP地址和域名的对应关系指定给电脑从而进行访问。那么我们可以修改Windows的<strong>C:\Windows\System32\drivers\etc\hosts</strong>文件来达到我们的目的。</p><h2 id="3、修改方法">3、修改方法</h2><h3 id="查询IP地址">查询IP地址</h3><p>我们需要在站长之家网站查询三个网址的IP地址：<strong><a href="http://github.com">github.com</a></strong>(对应1个IP地址)、<strong><a href="http://github.global.ssl.fastly.net">github.global.ssl.fastly.net</a></strong>(对应1个IP地址)、<strong><a href="http://assets-cdn.github.com">assets-cdn.github.com</a></strong>(对应4个IP地址)。</p><p><font color='green'>Tips:在站长之家的IP查询输入上述三个域名即可查看IP,在查看IP的时候<em><strong>请多次刷新</strong></em>，<em><strong>直到显示的IP地址不再变化</strong></em>再记录下来。</font></p><center><img src="/videos/站长之家IP查询.gif" width = "" height = ""></center><h3 id="修改hosts文件">修改hosts文件</h3><ol><li class="lvl-3"><p>复制<strong>C:\Windows\System32\drivers\etc\hosts</strong>文件到桌面</p></li><li class="lvl-3"><p>打开方式使用记事本打开</p></li><li class="lvl-3"><p>按照IP和域名对应例子填入以上三个域名的IP对应关系</p></li><li class="lvl-3"><p>替换掉原先的<strong>C:\Windows\System32\drivers\etc\hosts</strong>文件(会提示管理员权限)</p></li></ol><h3 id="font-color-pink-刷新DNS缓存-font"><font color='pink'>刷新DNS缓存</font></h3><p><em><strong>光修改了DNS以后还不行，需要刷新DNS才行</strong></em>，我提供CMD工具来刷新Windows的DNS缓存。</p><ol><li class="lvl-3"><p>win键 + R键输入cmd，按回车打开cmd终端</p></li><li class="lvl-3"><p>输入<code>ipconfig/flushdns</code>，按回车提示刷新DNS成功。</p></li></ol><p>视频演示一下</p><center><img src="/videos/刷新DNS.gif" width = "" height = ""></center><h3 id="4、方法有效时间追踪">4、方法有效时间追踪</h3><p>2024年1月4日有效</p>]]></content>
       
@@ -71,8 +71,8 @@
     
     <entry>
       <title>基于6S管理模式的口腔临床研究</title>
-      <link href="/2024/01/04/6S%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%B8%B4%E5%BA%8A%E7%A0%94%E7%A9%B6/"/>
-      <url>/2024/01/04/6S%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%B8%B4%E5%BA%8A%E7%A0%94%E7%A9%B6/</url>
+      <link href="/2024/01/04/6Smanagment/"/>
+      <url>/2024/01/04/6Smanagment/</url>
       
         <content type="html"><![CDATA[<h1 align=center>基于6S管理模型的口腔护理临床研究</h1><h2 id="1、研究三要素">1、研究三要素</h2><h3 id="研究对象">研究对象</h3><p>本研究对象包括<em><strong>护理人员</strong></em>、<em><strong>医生</strong></em>以及<em><strong>患者</strong></em>。</p><h3 id="研究措施">研究措施</h3><p>本研究的干预措施为是否进行6S管理模式进行临床护理管理。</p><p><font color='green'><em><strong>Tips:要比较6S管理模型实施前后的效果需要在研究设计初期设计好评价体系，这可能是研究需要细化的内容</strong></em></font></p><h3 id="结局指标">结局指标</h3><ul class="lvl-0"><li class="lvl-2"><p><input type="checkbox" id="checkbox0"><label for="checkbox0">主要结局指标：</label><strong>护理质量评分(6S体系)</strong></p></li><li class="lvl-2"><p><input type="checkbox" id="checkbox1"><label for="checkbox1">次要结局指标：</label><strong>医生满意度</strong>、<strong>患者满意度</strong></p></li></ul><p><font color='green'><em><strong>Tips:6S评价体系内涵</strong></em></font></p><p><font color='green'><em><strong>6S</strong></em>管理源于<em><strong>5S</strong></em>管理,整理 (<strong>S</strong>EIRI)、在整顿 (<strong>S</strong>EITON) 、清扫 (<strong>S</strong>EISO) 、清洁(<strong>S</strong>EIKETSU) 、素养(<strong>S</strong>HITSUKE) 基础上增加了安全(<strong>S</strong>ECURITY)。</font></p><h2 id="2、实施方法">2、实施方法</h2><p>制定实施方案。。。。。。。。。</p><h2 id="3、结果分析">3、结果分析</h2><h3 id="统计分析方法">统计分析方法</h3><p>应用统计软件SPSS23.0进行数据分析，计量资料采用t检验，P&lt;0.05表示差异有统计学意义。。。。。。。。。</p><h3 id="6S实施前后结局指标的比较">6S实施前后结局指标的比较</h3><table><thead><tr><th></th><th>护理质量</th><th>医生满意度</th><th>患者满意度</th><th style="text-align:center">P值</th></tr></thead><tbody><tr><td>实施前</td><td>均数±标准差</td><td>均数±标准差</td><td>均数±标准差</td><td style="text-align:center"></td></tr><tr><td>实施后</td><td>均数±标准差</td><td>均数±标准差</td><td>均数±标准差</td><td style="text-align:center"></td></tr></tbody></table>]]></content>
       
@@ -104,8 +104,8 @@
     
     <entry>
       <title>Hexo渲染报错解决方案</title>
-      <link href="/2024/01/03/Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-      <url>/2024/01/03/Hexo%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      <link href="/2024/01/03/hexoproblems/"/>
+      <url>/2024/01/03/hexoproblems/</url>
       
         <content type="html"><![CDATA[<p><font color='green'>Tips: 本文的解决方案肯定不是最优解，泛化能力很差，但仅仅有一点作用。</font></p><h1>1、hexo渲染gitalk报错</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something<span class="string">&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span></span><br><span class="line"><span class="string">TypeError: Cannot read properties of undefined (reading &#x27;</span>gitalk<span class="string">&#x27;)</span></span><br></pre></td></tr></table></figure><h2 id="问题分析">问题分析</h2><p>出现该问题肯定是由于您安装了gitalk的插件<em><strong>hexo-plugin-gitalk</strong></em>，并且在运行hexo g或者 hexo s时报错。根据报错内容应该是插件内<em><strong>index.js</strong></em>出现了错误。原因不明，请大佬指出。</p><h2 id="方案">方案</h2><ol><li class="lvl-3"><p><strong>移动</strong>插件内的index.js文件</p></li><li class="lvl-3"><p>重新运行渲染命令 hexo g 或者 hexo s</p></li><li class="lvl-3"><p>将index.js移动回原先的路径</p></li><li class="lvl-3"><p>再次运行渲染命令</p></li></ol><p><font color='green'>Tips: 在<em><strong>第2步</strong></em>会有如下报错：</font></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR Plugin load failed: hexo-plugin-gitalk</span><br><span class="line">Error: EISDIR: illegal operation on a directory, read</span><br></pre></td></tr></table></figure><p><font color='green'>请忽视，在<em><strong>第4步</strong></em>会运行成功且无报错。</font></p>]]></content>
       
@@ -141,8 +141,8 @@
     
     <entry>
       <title>利用i5ting_toc插件将md转换成html文件</title>
-      <link href="/2024/01/03/i5ting_toc%E6%8F%92%E4%BB%B6%E5%B0%86md%E8%BD%AC%E6%8D%A2%E6%88%90html%E6%96%87%E4%BB%B6/"/>
-      <url>/2024/01/03/i5ting_toc%E6%8F%92%E4%BB%B6%E5%B0%86md%E8%BD%AC%E6%8D%A2%E6%88%90html%E6%96%87%E4%BB%B6/</url>
+      <link href="/2024/01/03/md2htmlbyi5ting/"/>
+      <url>/2024/01/03/md2htmlbyi5ting/</url>
       
         <content type="html"><![CDATA[<p><font color='green'>Tips: 安装前需要确定系统安装了Node.js，因为需要使用npm包管理器。</font></p><h1>1、插件安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install i5ting_toc</span><br></pre></td></tr></table></figure><p>安装成功！</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ npm install i5ting_toc -g</span><br><span class="line"></span><br><span class="line">added 17 packages <span class="keyword">in</span> 53s</span><br><span class="line"></span><br><span class="line">1 package is looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br></pre></td></tr></table></figure><h1>2、执行转换命令</h1><p><font color='green'>Tips: 需要跳转到待转换文件的地址，再执行如下命令。经过测试Windows下直接输入文件地址，似乎会出现意外。</font></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i5ting_toc -f *.md <span class="comment">#转换该目录下全部md文件为html文件</span></span><br></pre></td></tr></table></figure><p>转换结果：</p><p><img src="/images/image-20240103112023258.png" alt="image-20240103112023258"></p><p><img src="/images/image-20240103112217074.png" alt="image-20240103112217074"></p><h1>3、移动html文件</h1><p>转换后会在该目录下生成<font color='red'>preview</font>文件夹,转换成功后的html就在<font color='red'>preview</font>文件夹下。移动同名html文件到你的目标地址即可完成转换。</p><h1 align=center>后续1</h1><p>如果使用typora编辑器，可以直接<u><strong>导出</strong></u>为html格式，不用i5ting_toc插件转换。</p>]]></content>
       
