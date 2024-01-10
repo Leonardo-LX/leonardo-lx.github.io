@@ -4,6 +4,103 @@
   
     
     <entry>
+      <title>docker脚本记录</title>
+      <link href="/2024/01/10/DockerScripts/"/>
+      <url>/2024/01/10/DockerScripts/</url>
+      
+        <content type="html"><![CDATA[<p><font color='green'>Tips:本文是为了记录部署docker的一些commands</font></p><h1>docker基础命令</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker network <span class="built_in">ls</span> <span class="comment">#查看虚拟容器的网络接口</span></span><br><span class="line">docker <span class="built_in">exec</span> -it [容器名] /bin/bash <span class="comment">#进入容器内部</span></span><br><span class="line">docker ps <span class="comment">#查看启动的容器</span></span><br></pre></td></tr></table></figure><h1>部署docker代码</h1><h2 id="qbittorrent-docker">qbittorrent docker</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">docker run --restart=always \</span><br><span class="line">--name qbittorrent \</span><br><span class="line">-itd --net=host \</span><br><span class="line">-e WEBUI_PORT=50013 \</span><br><span class="line">-v /share/Container/qbittorrent/config:/config:rw \</span><br><span class="line">-v /share/Downloads:/downloads:rw \</span><br><span class="line">-v /share/Videos:/Videos:rw \</span><br><span class="line">linuxserver/qbittorrent</span><br></pre></td></tr></table></figure><p>代码说明：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">--restart=always <span class="comment">#开启容器随主机启动</span></span><br><span class="line">--name qbittorrent <span class="comment">#指定容器名</span></span><br><span class="line">--net=host <span class="comment">#指定host网络模式，容器共享主机网络，可降低容器网络延迟,当指定为host模式时不用进行-p端口映射</span></span><br><span class="line">-e WEBUI_PORT=50013 <span class="comment">#修改qbittorrent容器网络管理界面端口，默认是8080</span></span><br><span class="line">-v /share/Downloads:/downloads:rw <span class="comment">#挂载磁盘路径格式是 -v [主机路径]:[容器路径]:[读写权限]</span></span><br></pre></td></tr></table></figure><h2 id="迅雷docker">迅雷docker</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name=xunlei \</span><br><span class="line">--hostname=mynas \</span><br><span class="line">--net=host \</span><br><span class="line">-v /share/Public/迅雷:/xunlei/data \</span><br><span class="line">-v /share/Downloads:/xunlei/downloads \</span><br><span class="line">-v /share/CACHEDEV6_DATA/Videos:/xunlei/Videos \</span><br><span class="line">--restart=always \</span><br><span class="line">--privileged \</span><br><span class="line">cnk3x/xunlei:latest</span><br></pre></td></tr></table></figure><p>代码说明</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">--hostname=mynas <span class="comment">#指定迅雷主机名，这个选项暂时只有在迅雷docker中遇到过，具体作用不明</span></span><br><span class="line">--privileged=<span class="literal">true</span> <span class="comment">#指定使用特权模式启动容器，当使用--privileged=true选项运行容器时，Docker会赋予容器几乎与主机相同的权限</span></span><br></pre></td></tr></table></figure><h2 id="网心云docker">网心云docker</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --restart=always \</span><br><span class="line">--name=WXY \</span><br><span class="line">--net=host \</span><br><span class="line">-v /share/Web/WXYstorage:/storage \</span><br><span class="line">onething1/wxedge:latest</span><br></pre></td></tr></table></figure><p>代码说明</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-v /share/Web/WXYstorage:/storage <span class="comment">#在网心云docker中/storage目录就是存放共享文件的目录</span></span><br></pre></td></tr></table></figure><h2 id="腾讯云DDNS-docker">腾讯云DDNS docker</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker run --name=nasddns \</span><br><span class="line">--net=host \</span><br><span class="line">-d \</span><br><span class="line">jeessy/ddns-go:latest</span><br></pre></td></tr></table></figure><p>代码说明</p><p>ddns-go的默认端口为9876，容器启动成功后需要进入9876端口配置腾讯云账号。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络工具 </category>
+          
+          <category> 虚拟容器 </category>
+          
+          <category> 容器脚本 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+            <tag> 脚本 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>于雷口腔数据整理分析日志</title>
+      <link href="/2024/01/09/statiskq1/"/>
+      <url>/2024/01/09/statiskq1/</url>
+      
+        <content type="html"><![CDATA[<h1>数据整理记录</h1><p>1、合并平原和高原调查数据时学历合并问题，高原地区的学历分类<strong>初中及以下</strong>一共四人但平原地区没有初中及以下分类，故将高原初中及以下合并到<strong>中学及以下</strong>。编码为<strong>1</strong></p><p>2、既往病史两个数据库统一编码为 <strong>1=无 2=高血压 3=心脏病 4=糖尿病 5=胃肠道疾病 6=呼吸系统疾病 7=其他</strong></p><h1><strong>分析思路</strong></h1><p>1、不同刷牙方式的疾病发生率有无差异</p><p>2、不同海拔高度、不同军龄（1-<strong>2</strong>，3-<strong>5</strong>，6-<strong>8</strong>，9+）、学历（plan2按照三个板块的）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 临床研究 </category>
+          
+          <category> 数据分析 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据分析 </tag>
+            
+            <tag> 口腔 </tag>
+            
+            <tag> 统计数据 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HIV患者慢性牙周炎特异菌群标志物的研究</title>
+      <link href="/2024/01/09/HIVperiodontitis/"/>
+      <url>/2024/01/09/HIVperiodontitis/</url>
+      
+        <content type="html"><![CDATA[<p>要点记录：慢性牙周炎分级，HIV相关的牙周菌群，取样的点是确定唾液还是菌斑或者其他的部位。</p><p>初步检索词：PubMed（HIV periodontitis 16S）= 16个结果</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 临床科研 </category>
+          
+          <category> 基金标书 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 基金标书 </tag>
+            
+            <tag> HIV </tag>
+            
+            <tag> 微生物组学 </tag>
+            
+            <tag> 代谢组学 </tag>
+            
+            <tag> 慢性牙周炎 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>科学文章集锦</title>
       <link href="/2024/01/04/ScientificReports/"/>
       <url>/2024/01/04/ScientificReports/</url>
