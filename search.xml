@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>高原牙周病人群样本库信息</title>
+      <link href="/2024/01/11/BuildSampleBank/"/>
+      <url>/2024/01/11/BuildSampleBank/</url>
+      
+        <content type="html"><![CDATA[<h1>个人信息</h1><p>样本库建立内容参考问卷星相关内容</p><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">docker network <span class="hljs-built_in">ls</span> <span class="hljs-comment">#查看虚拟容器的网络接口</span><br>docker <span class="hljs-built_in">exec</span> -it [容器名] /bin/bash <span class="hljs-comment">#进入容器内部</span><br>docker ps <span class="hljs-comment">#查看启动的容器</span><br></code></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 临床科研 </category>
+          
+          <category> 信息收集 </category>
+          
+          <category> 高原样本 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 样本库 </tag>
+            
+            <tag> 个人信息 </tag>
+            
+            <tag> 牙周病 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>docker脚本记录</title>
       <link href="/2024/01/10/DockerScripts/"/>
       <url>/2024/01/10/DockerScripts/</url>
