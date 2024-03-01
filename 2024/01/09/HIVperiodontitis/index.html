@@ -6,20 +6,22 @@
   <meta name="keywords" content=" 基金标书 , HIV , 微生物组学 , 代谢组学 , 慢性牙周炎 ">
   <meta name="description" content="HIV患者慢性牙周炎特异菌群标志物的研究 | 记录总结">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一、个人信息 样本库建立内容参考问卷星相关内容 1、姓名：____ 2、性别：____ 3、身高：____cm 4、体重：____kg 5、年龄：____岁 6、近半年的常驻(住)地：____(点选城市) 7、民族：____ 8、文化程度：____ ①初中及以下    ②高中或中专   ③本科或大专  ④硕士及以上 9、婚姻状况：____ ①未婚     ②在婚     ③离异     ④丧偶 二">
+<meta name="description" content="Tips：本文的目的是使用家庭NAS的IP转发功能达到访问家庭其他服务器(电脑、路由器等)的功能。 1、详细需求 我家里有一个NAS服务器，我使用zerotier内网穿透工具可以远程访问NAS服务器。同时，NAS也是可以访问到家里其他设备的，比如路由器、电脑、电视等。那么可不可以通过局域网内的IP地址来直接远程访问内部的设备呢？可以，那就是IP转发功能功能。理论上只要是Linux系统，都适用本方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="高原牙周病人群样本库信息">
-<meta property="og:url" content="https://leonardo-lx.github.io/2024/01/11/BuildSampleBank/index.html">
+<meta property="og:title" content="威联通开启IP转发">
+<meta property="og:url" content="https://leonardo-lx.github.io/2024/01/19/ipforwarding/index.html">
 <meta property="og:site_name" content="记录总结">
-<meta property="og:description" content="一、个人信息 样本库建立内容参考问卷星相关内容 1、姓名：____ 2、性别：____ 3、身高：____cm 4、体重：____kg 5、年龄：____岁 6、近半年的常驻(住)地：____(点选城市) 7、民族：____ 8、文化程度：____ ①初中及以下    ②高中或中专   ③本科或大专  ④硕士及以上 9、婚姻状况：____ ①未婚     ②在婚     ③离异     ④丧偶 二">
+<meta property="og:description" content="Tips：本文的目的是使用家庭NAS的IP转发功能达到访问家庭其他服务器(电脑、路由器等)的功能。 1、详细需求 我家里有一个NAS服务器，我使用zerotier内网穿透工具可以远程访问NAS服务器。同时，NAS也是可以访问到家里其他设备的，比如路由器、电脑、电视等。那么可不可以通过局域网内的IP地址来直接远程访问内部的设备呢？可以，那就是IP转发功能功能。理论上只要是Linux系统，都适用本方法">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-11T03:16:12.000Z">
-<meta property="article:modified_time" content="2024-01-11T08:51:24.704Z">
+<meta property="og:image" content="https://leonardo-lx.github.io/images/ADDroutes.png">
+<meta property="article:published_time" content="2024-01-19T06:36:22.000Z">
+<meta property="article:modified_time" content="2024-03-01T07:40:52.391Z">
 <meta property="article:author" content="leonardo-lx">
-<meta property="article:tag" content="样本库">
-<meta property="article:tag" content="个人信息">
-<meta property="article:tag" content="牙周病">
+<meta property="article:tag" content="IP转发">
+<meta property="article:tag" content="威联通">
+<meta property="article:tag" content="zerotier">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://leonardo-lx.github.io/images/ADDroutes.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -176,7 +178,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(9)</small>
+                <small>(10)</small>
             
         </div>
     </li>
@@ -414,12 +416,16 @@
     
         
             
+        
+    
+        
+            
                 
     <li>
         <div data-rel="网络工具">
             <i class="fold iconfont icon-right"></i>
             网络工具
-            <small>(4)</small>
+            <small>(5)</small>
         </div>
         
             <ul class="sub hide">
@@ -431,6 +437,32 @@
             访问问题
             <small>(1)</small>
         </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="网络工具&lt;---&gt;内网访问">
+            <i class="fold iconfont icon-right"></i>
+            内网访问
+            <small>(1)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="网络工具&lt;---&gt;内网访问&lt;---&gt;IP转发">
+            
+            IP转发
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
         
     </li>
 
@@ -521,6 +553,10 @@
             
         
     
+        
+            
+        
+    
 </ul>
 <div class="left-bottom">
     <div class="menus">
@@ -541,8 +577,8 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="9">
-<input type="hidden" id="yelog_site_word_count" value="3.9k">
+<input type="hidden" id="yelog_site_posts_number" value="10">
+<input type="hidden" id="yelog_site_word_count" value="5.6k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -668,6 +704,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>威联通</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>微生物组学</a>
             </li>
         
@@ -728,11 +768,19 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>IP转发</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>md</a>
             </li>
         
             <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>Typora</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>zerotier</a>
             </li>
         
     </div>
@@ -745,6 +793,15 @@
     </div>
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 网络工具 内网访问 IP转发 "
+           href="/2024/01/19/ipforwarding/"
+           data-tag="IP转发,威联通,zerotier"
+           data-author="" >
+            <span class="post-title" title="威联通开启IP转发">威联通开启IP转发</span>
+            <span class="post-date" title="2024-01-19 14:36:22">2024/01/19</span>
+        </a>
         
         
         <a  class="全部文章 临床科研 信息收集 高原样本 "
@@ -882,12 +939,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-01-17 17:20:09'>2024-01-09 15:02</time>
+            发布时间 : <time class="date" title='最后更新: 2024-01-18 11:36:11'>2024-01-09 15:02</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.6k</span>
+        <span>字数:2.6k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -917,7 +974,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">检索词：PubMed（HIV periodontitis 16S）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">检索词：CNKI（HIV 牙周炎 ）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%A3%80%E7%B4%A2%E6%97%A5%E6%9C%9F"><span class="toc-text">1、检索日期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%A3%80%E7%B4%A2%E7%BB%93%E6%9E%9C"><span class="toc-text">2、检索结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%BC%BA%E7%9B%B8%E5%85%B3%E8%AE%BA%E6%96%87"><span class="toc-text">3、强相关论文</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">检索词：CNKI（艾滋病 牙周炎 ）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%A3%80%E7%B4%A2%E6%97%A5%E6%9C%9F-2"><span class="toc-text">1、检索日期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%A3%80%E7%B4%A2%E7%BB%93%E6%9E%9C-2"><span class="toc-text">2、检索结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%BC%BA%E7%9B%B8%E5%85%B3%E8%AE%BA%E6%96%87-2"><span class="toc-text">3、强相关论文</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">检索词：万方数据库（HIV 牙周炎）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%A3%80%E7%B4%A2%E6%97%A5%E6%9C%9F-3"><span class="toc-text">1、检索日期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%A3%80%E7%B4%A2%E7%BB%93%E6%9E%9C-3"><span class="toc-text">2、检索结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%BC%BA%E7%9B%B8%E5%85%B3%E8%AE%BA%E6%96%87-3"><span class="toc-text">3、强相关论文</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">检索词：PubMed（HIV periodontitis 16S）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%A3%80%E7%B4%A2%E6%97%A5%E6%9C%9F"><span class="toc-text">1、检索日期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%A3%80%E7%B4%A2%E7%BB%93%E6%9E%9C"><span class="toc-text">2、检索结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%BC%BA%E7%9B%B8%E5%85%B3%E8%AE%BA%E6%96%87"><span class="toc-text">3、强相关论文</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">检索词：CNKI（HIV 牙周炎 ）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%A3%80%E7%B4%A2%E6%97%A5%E6%9C%9F-2"><span class="toc-text">1、检索日期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%A3%80%E7%B4%A2%E7%BB%93%E6%9E%9C-2"><span class="toc-text">2、检索结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%BC%BA%E7%9B%B8%E5%85%B3%E8%AE%BA%E6%96%87-2"><span class="toc-text">3、强相关论文</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">检索词：CNKI（艾滋病 牙周炎 ）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%A3%80%E7%B4%A2%E6%97%A5%E6%9C%9F-3"><span class="toc-text">1、检索日期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%A3%80%E7%B4%A2%E7%BB%93%E6%9E%9C-3"><span class="toc-text">2、检索结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%BC%BA%E7%9B%B8%E5%85%B3%E8%AE%BA%E6%96%87-3"><span class="toc-text">3、强相关论文</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">检索词：万方数据库（HIV 牙周炎）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%A3%80%E7%B4%A2%E6%97%A5%E6%9C%9F-4"><span class="toc-text">1、检索日期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%A3%80%E7%B4%A2%E7%BB%93%E6%9E%9C-4"><span class="toc-text">2、检索结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%BC%BA%E7%9B%B8%E5%85%B3%E8%AE%BA%E6%96%87-4"><span class="toc-text">3、强相关论文</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">阅读记录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HIV-%E7%89%99%E5%91%A8%E7%82%8E%E6%82%A3%E8%80%85%E5%85%8D%E7%96%AB%E7%8A%B6%E6%80%81%E5%92%8C%E9%BE%88%E6%B2%9F%E6%B6%B2%E4%B8%ADTNF-%CE%B1%E4%B8%8E%E7%89%99%E5%91%A8%E4%B8%B4%E5%BA%8A%E6%8C%87%E6%A0%87%E7%9A%84%E7%9B%B8%E5%85%B3%E6%80%A7%E7%A0%94%E7%A9%B6"><span class="toc-text">HIV+牙周炎患者免疫状态和龈沟液中TNF-α与牙周临床指标的相关性研究</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HIV-%E7%89%99%E5%91%A8%E7%82%8E%E6%82%A3%E8%80%85%E9%BE%88%E6%B2%9F%E6%B6%B2IL-6%E7%9A%84%E6%A3%80%E6%B5%8B%E5%88%86%E6%9E%90"><span class="toc-text">HIV+牙周炎患者龈沟液IL-6的检测分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%99%BD%E7%BB%86%E8%83%9E%E4%BB%8B%E7%B4%A06%E5%9C%A8HIV%E6%84%9F%E6%9F%93%E7%89%99%E5%91%A8%E7%82%8E%E6%82%A3%E8%80%85%E4%B8%AD%E7%9A%84%E8%A1%A8%E8%BE%BE%E4%B8%8E%E4%BD%9C%E7%94%A8"><span class="toc-text">白细胞介素6在HIV感染牙周炎患者中的表达与作用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">思维灵感</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -935,14 +992,31 @@
       
         <p>要点记录：慢性牙周炎分级，HIV相关的牙周菌群，取样的点是确定唾液还是菌斑或者其他的部位。</p>
 <h1>检索词：PubMed（HIV periodontitis 16S）</h1>
-<p>检索日期：2024年1月17日</p>
-<p>检索结果：16个结果</p>
-<h1>检索词：CNKI（HIV 牙周炎 ）</h1>
 <h2 id="1、检索日期">1、检索日期</h2>
 <p>2024年1月17日</p>
 <h2 id="2、检索结果">2、检索结果</h2>
-<p>48个中文结果，61个外文期刊</p>
+<p>16个结果</p>
 <h2 id="3、强相关论文">3、强相关论文</h2>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/28328799/">Oral microbiome in HIV-associated periodontitis.</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/34986272/">Non-surgical periodontal debridement affects subgingival bacterial diversity in patients with HIV-1 and periodontitis.</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/26040412/">Subgingival bacterial community profiles in HIV-infected Brazilian adults with chronic periodontitis.</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/31882580/">Significant effect of HIV/HAART on oral microbiota using multivariate analysis.</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/31380576/">Oral bacteriome of HIV-1-infected children from Rio de Janeiro, Brazil: Next-generation DNA sequencing analysis.</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/37653055/">Beyond the effects of HIV infection and integrase inhibitors-based therapies on oral bacteriome - PubMed (nih.gov)</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/29855347/">Oral microbiota in youth with perinatally acquired HIV infection - PubMed (nih.gov)</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/12753474/">Periodontal pathogens in subgingival plaque of HIV-positive subjects with chronic periodontitis - PubMed (nih.gov)</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/17309593/">Subgingival plaque microbiota in HIV positive patients - PubMed (nih.gov)</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/32024712/">Oral and Gut Microbial Diversity and Immune Regulation in Patients with HIV on Antiretroviral Therapy - PubMed (nih.gov)</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/26146997/">The Oral Bacterial Communities of Children with Well-Controlled HIV Infection and without HIV Infection - PubMed (nih.gov)</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/32635588/">Relationship between the Oral and Vaginal Microbiota of South African Adolescents with High Prevalence of Bacterial Vaginosis - PubMed (nih.gov)</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/29851662/">Alterations in the oral microbiome in HIV-infected participants after antiretroviral therapy administration are influenced by immune status - PubMed (nih.gov)</a></p>
+<p><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/11154403/">The diversity of periodontal spirochetes by 16S rRNA analysis - PubMed (nih.gov)</a></p>
+<h1>检索词：CNKI（HIV 牙周炎 ）</h1>
+<h2 id="1、检索日期-2">1、检索日期</h2>
+<p>2024年1月17日</p>
+<h2 id="2、检索结果-2">2、检索结果</h2>
+<p>48个中文结果，61个外文期刊</p>
+<h2 id="3、强相关论文-2">3、强相关论文</h2>
 <p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307BxH59fhtdgozftydd8506_pn9rQFlOzs-lnX2-n5EeCeUKuXRdJ6Fdz2RmBQjmuw8MS-dPgJtJGbGDcU5Q8wkcybgR2f73StmEoZcvdD_p6oXxDg0Tmv0XspZ9r50EoaHwSwkHDi18l9Q==&amp;uniplatform=NZKPT&amp;language=CHS">HIV+牙周炎患者免疫状态和龈沟液中TNF-α与牙周临床指标的相关性研究</a></p>
 <p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307BzKSkKxmzkP105vh5sjITndek_F2JXjRb4wbvx5LmDQaw99v5N8XJihPu_DiEbJWcZMziu7mQm0qjTkADZYb-uQViwyMXwTqfpxSk4E_bVA5FJoPzZFIBS9IFj--bKS3yo=&amp;uniplatform=NZKPT&amp;language=CHS">HIV+牙周炎患者龈沟液IL-6的检测分析</a></p>
 <p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307Bzla6aBXggLvOKwexvsHlu-RMc_yH0N6DodWKbIfUwnKZkJogZvwRIN_B1HTBaMcR0k5pVmwVblhlUpNQE7yCYbNZbxYsLDFU7AVRb8phQz0sdbd3beOr7kFGdjtQJNsUI=&amp;uniplatform=NZKPT&amp;language=CHS">白细胞介素6在HIV感染牙周炎患者中的表达与作用</a></p>
@@ -980,7 +1054,7 @@
 <p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307By4rhtbEZF_WVhKIGp3VtuDwVAXQl0iRsib4GmXYJesUwBeu2znZuJn9zWDeqxHgY1ERz79Qh-hm_rwt4D-fawXWrNSnpwXRGMhVA15Rc15GjKd9OqBHOqHkwwoZKLQgovMLAa1egmTcuzAY4roPW_8lLNWPm_RbqA=&amp;uniplatform=NZKPT&amp;language=CHS">Lactoferrin levels in gingival crevicular fluid and saliva of HIV-infected patients with chronic periodontitis.</a></p>
 <p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307Bwz7uDV5KpxRR7Z7FpjEdJIEdoB89g-eaBHEzUiu8ZuJmQutZN6ouyqF2Pub-oK8LCmtjQPfbUQZXk88JQe2OAKH21ufSnRpLGNiteu0dTDo2O_rg1rx6thMzlMtkVbLu0UdKt2_QF6AsjKb7ieXKVyTb1GgNa2iW4=&amp;uniplatform=NZKPT&amp;language=CHS">Lactoferrin levels in gingival crevicular fluid and saliva of HIVHIV ‐infected patients with chronic periodontitis</a></p>
 <p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307Bz49abkvLTIRkWwSv8MD1tfS51U8iuuabQc2AQ-S7LnBhUzQ9chAVmJe-SUoMgmlmAjEq55FRbsmxNiFY8d-d2eo-ctPKaJyrVCB9bNeAg4PURxq5lmCwHjoQq6KAt2hFlps2oLee63KzLGTJ4sGNExTE3WqfvyJV0=&amp;uniplatform=NZKPT&amp;language=CHS">Prevalence and Determinants of Chronic periodontitis in HIV positive patients in Nigeria</a></p>
-<p>[ <a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307BxGt0C-XS3KoALBSrfhyWoekmsPVI19sCRzAagNKOBIQHZku_RtHB0CcT74C90FdmxhYo4gPW9L7VA5vhhuhTmrKJcf2q6xUIz_bDmnRyxXXn-M_CufiZ32KbFgiO11tBtLLSOsb4lXSXyqg_mmMA-8tRI8OfXH4J4=&amp;uniplatform=NZKPT&amp;language=CHS">Association of CD(+)4 T lymphocyte count and gingival crevicular fluid prostaglandin E2 with periodontal parameters in HIV-positive periodontitis patients].</a></p>
+<p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307BxGt0C-XS3KoALBSrfhyWoekmsPVI19sCRzAagNKOBIQHZku_RtHB0CcT74C90FdmxhYo4gPW9L7VA5vhhuhTmrKJcf2q6xUIz_bDmnRyxXXn-M_CufiZ32KbFgiO11tBtLLSOsb4lXSXyqg_mmMA-8tRI8OfXH4J4=&amp;uniplatform=NZKPT&amp;language=CHS">Association of CD(+)4 T lymphocyte count and gingival crevicular fluid prostaglandin E2 with periodontal parameters in HIV-positive periodontitis patients].</a></p>
 <p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307BwClYGHNBvtMcT5tHi8ZqRBpSyLyhCgp-pnyCJFCsCV-LBGjh2sXcmAWHK4mY-nTaCYlcnRzwWI6YvVpNO-LmAFcKdSBGFeCtfSrDhCEAOvrig7N3lluF_8a_dUvWwqOOzARhQxF55yGg==&amp;uniplatform=NZKPT&amp;language=CHS"> Mast Cell Degranulation in the Chronic Periodontitis of Non−HIV-Infected and HIV-Infected Individuals Undergoing Highly Active Antiretroviral Therapy</a></p>
 <p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307BzVFo2MRtPotqPgfXMtmV3PZ3QZ6MLwQQ5wXWb2PnGXnfWV1OtaBYbuCUzsIQ-LMumIF-1N9pE2TOGBC_L9-nE5tR-Dq-EH3QbkGurfMadzYloAy0z6iiiWCvDBC0Do06cTJ-oa5xVpnq0-ioc5SC_wn4hyNgPyaE0=&amp;uniplatform=NZKPT&amp;language=CHS">Associations of periodontitis and oral manifestations with CD4 counts in human immunodeficiency virus-pregnant women in Thailand</a></p>
 <p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307ByOxczDhPlJQPuz1vSxx96HL7ru9qsa_JnO2FbDOu_PPggEGSDlJD_hQ6jU3zQUrUSGamvKRm5Iyi9szHH2-VF-Pl3W_1vK0ulLm7NaXvh7s4zBeiVz8KEFbqWproK8d0aZp0HSAE8iwQ==&amp;uniplatform=NZKPT&amp;language=CHS">Mast cells in periodontal disease of individuals with and without HIV undergoing highly active antiretroviral therapy.</a></p>
@@ -993,18 +1067,18 @@
 <p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307ByQB0vUTYVzft38BGBckdGRCW_QpMCpNKw7cXwWIBdZG6Iq6H39gL8wq3TbGIZE2tYmax0-mOY0CtWG4TgzdXS_0nMwPuk9eqAZWmxtYn3hTzkJwi736do9phg0e4rdGfXaiOTqe8yV3g==&amp;uniplatform=NZKPT&amp;language=CHS">Periodontal pathogens in subgingival plaque of HIV-positive subjects with chronic periodontitis.</a></p>
 <p><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307Bxt7MRrmuztV3s-v3g92ddEJF8c568Nk8UODh2hMVibh4ef69bfAyjROPHhUbhr0O3uoCCH3BMuD5dtZUFKRnVmHHWnTjpY560_rWNRoBZ0RNaOuL_V3pCFDD5IIn2mc2NBvuIvEbDILQ==&amp;uniplatform=NZKPT&amp;language=CHS">Differential diagnosis in dentistry. HIV-associated periodontitis.</a></p>
 <h1>检索词：CNKI（艾滋病 牙周炎 ）</h1>
-<h2 id="1、检索日期-2">1、检索日期</h2>
-<p>2024年1月17日</p>
-<h2 id="2、检索结果-2">2、检索结果</h2>
-<p>1.24万个中文结果，189个外文期刊</p>
-<h2 id="3、强相关论文-2">3、强相关论文</h2>
-<p>从题目中分析，前10页200篇论文主体尚未发现研究<u><em>艾滋病感染者的牙周炎情况</em></u>的研究，由于无法遍历完全文章，故待后续精度该检索词下的文章。<s>原因推测是，在牙周炎的文章中很多会提到艾滋病，所以命中比较多</s>。</p>
-<h1>检索词：万方数据库（HIV 牙周炎）</h1>
 <h2 id="1、检索日期-3">1、检索日期</h2>
 <p>2024年1月17日</p>
 <h2 id="2、检索结果-3">2、检索结果</h2>
-<p>47个结果</p>
+<p>1.24万个中文结果，189个外文期刊</p>
 <h2 id="3、强相关论文-3">3、强相关论文</h2>
+<p>从题目中分析，前10页200篇论文主体尚未发现研究<u><em>艾滋病感染者的牙周炎情况</em></u>的研究，由于无法遍历完全文章，故待后续精度该检索词下的文章。<s>原因推测是，在牙周炎的文章中很多会提到艾滋病，所以命中比较多</s>。</p>
+<h1>检索词：万方数据库（HIV 牙周炎）</h1>
+<h2 id="1、检索日期-4">1、检索日期</h2>
+<p>2024年1月17日</p>
+<h2 id="2、检索结果-4">2、检索结果</h2>
+<p>47个结果</p>
+<h2 id="3、强相关论文-4">3、强相关论文</h2>
 <p><a target="_blank" rel="noopener" href="https://d.wanfangdata.com.cn/periodical/ChlQZXJpb2RpY2FsQ0hJTmV3UzIwMjMxMjI2EhF6aGxjeXN6ejIwMTQxNTAwOBoIOHBxYjhuYnQ%3D">HIV+牙周炎患者龈沟液IL-6的检测分析 (wanfangdata.com.cn)</a></p>
 <p><a target="_blank" rel="noopener" href="https://d.wanfangdata.com.cn/periodical/ChlQZXJpb2RpY2FsQ0hJTmV3UzIwMjMxMjI2Eg9iamtxeXgyMDE3MDMwMDQaCDhwcWI4bmJ0">HIV+牙周炎患者免疫状态和龈沟液中TNF-α与牙周临床指标的相关性研究 (wanfangdata.com.cn)</a></p>
 <p><a target="_blank" rel="noopener" href="https://d.wanfangdata.com.cn/periodical/ChlQZXJpb2RpY2FsQ0hJTmV3UzIwMjMxMjI2EhJnd3l4LWtxeXgyMDA2MDEwMjIaCDhwcWI4bmJ0">HIV感染者牙周炎的相关研究 (wanfangdata.com.cn)</a></p>
@@ -1036,6 +1110,22 @@
 <p><a target="_blank" rel="noopener" href="https://d.wanfangdata.com.cn/periodical/ChlQZXJpb2RpY2FsRU5HTmV3UzIwMjMwODMxEiAwNjFlYWExNGQ3NmEwMzJkNTNlZGZlODg2OTIxMzg0ZBoIcjdyZzJmMnU%3D">The gingival plasma cell infiltrate in HIV-positive patients with periodontitis is disorganized. (wanfangdata.com.cn)</a></p>
 <p><a target="_blank" rel="noopener" href="https://d.wanfangdata.com.cn/periodical/ChlQZXJpb2RpY2FsRU5HTmV3UzIwMjMwODMxEiA2ZjI3ZTJjMDNmMjUyOWYyNzMyOWZlZWU5MDllZTgyMhoIcjdyZzJmMnU%3D">The associations between gingival crevice fluid matrix metalloproteinase-9, tissue inhibitor of metalloproteinase-1 and periodontitis in human immunodeficiency virus-positive patients. (wanfangdata.com.cn)</a></p>
 <p><a target="_blank" rel="noopener" href="https://d.wanfangdata.com.cn/periodical/ChlQZXJpb2RpY2FsRU5HTmV3UzIwMjMwODMxEiA0MTRlMDY5ZjgxZjllZTJiMzFlOGVmMzYyZjc2ZTQ4YhoIcjdyZzJmMnU%3D">A TEM/SEM study of the microbial plaque overlying the necrotic gingival papillae of HIV-seropositive, necrotizing ulcerative periodontitis. (wanfangdata.com.cn)</a></p>
+<h1>阅读记录</h1>
+<h2 id="HIV-牙周炎患者免疫状态和龈沟液中TNF-α与牙周临床指标的相关性研究"><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307BxH59fhtdgozftydd8506_pn9rQFlOzs-lnX2-n5EeCeUKuXRdJ6Fdz2RmBQjmuw8MS-dPgJtJGbGDcU5Q8wkcybgR2f73StmEoZcvdD_p6oXxDg0Tmv0XspZ9r50EoaHwSwkHDi18l9Q==&amp;uniplatform=NZKPT&amp;language=CHS">HIV+牙周炎患者免疫状态和龈沟液中TNF-α与牙周临床指标的相关性研究</a></h2>
+<p>HIV+牙周炎患者的牙周炎症状态与免疫状态有关</p>
+<h2 id="HIV-牙周炎患者龈沟液IL-6的检测分析"><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307BzKSkKxmzkP105vh5sjITndek_F2JXjRb4wbvx5LmDQaw99v5N8XJihPu_DiEbJWcZMziu7mQm0qjTkADZYb-uQViwyMXwTqfpxSk4E_bVA5FJoPzZFIBS9IFj--bKS3yo=&amp;uniplatform=NZKPT&amp;language=CHS">HIV+牙周炎患者龈沟液IL-6的检测分析</a></h2>
+<p>HIV+牙周炎患者的牙周炎症程度与CD4+T淋巴细胞计数有关, 其龈沟液中IL-6水平与牙周临床指标有关</p>
+<h2 id="白细胞介素6在HIV感染牙周炎患者中的表达与作用"><a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=_NV5_o307Bzla6aBXggLvOKwexvsHlu-RMc_yH0N6DodWKbIfUwnKZkJogZvwRIN_B1HTBaMcR0k5pVmwVblhlUpNQE7yCYbNZbxYsLDFU7AVRb8phQz0sdbd3beOr7kFGdjtQJNsUI=&amp;uniplatform=NZKPT&amp;language=CHS">白细胞介素6在HIV感染牙周炎患者中的表达与作用</a></h2>
+<p>艾滋病即获得性免疫缺陷综合征 (acquiredimmunodeficiency syndrome, AIDS)，是由人类免疫缺陷病毒 (human immunodeficiency virus, HIV) 感染所导致的以CD4 细胞缺损和功能障碍为中心的严重免疫缺陷。HIV感染者口腔中的病损最常见的是普通的牙周病。HIV阳性者的免疫状态会影响牙周病的发生、发展，HIV感染可改变牙周微生物学组成。</p>
+<p>牙周慢性感染可能会导致HIV潜伏在感染细胞中的病毒复活及播散，对公众的人身健康造成影响—研究依据1</p>
+<p>线状牙龈红斑、坏死溃疡性牙龈炎、坏死溃疡性牙周炎是和HIV感染有着密切相关的牙周病损形式，随着高效抗病毒治疗的应用，这种急性牙周病损形式发病率明显减低，而慢性牙龈炎和慢性牙周炎更为常见。----研究依据2</p>
+<h1>思维灵感</h1>
+<p>1、缺乏HIV+性患者口腔菌群的差异研究-2024年1月18日</p>
+<p>2、HIV+患者免疫系统受到抑制，会导致牙周菌群和宿主口腔免疫之间的平衡被打破。自然而然，HIV+患者口腔内菌群会和无HIV感染人群的牙周炎存在差异。那么一些机会致病菌以及明确致病菌的丰富度在HIV+患者体内有没有较大程度地改变？这现在是未知的。</p>
+<p>3、研究证明，HIV+患者口腔的牙周病发病率远高于无HIV感染的人群。口腔菌群有没有可能是导致其口腔发病率高的原因？</p>
+<p>4、菌群代谢物与宿主的免疫调节之间存在明显的相关关系，那么优势致病菌以及机会致病菌的代谢物可能是导致HIV+患者牙周炎发病率高的重要原因？到底是不是这么回事儿，亟需我们的研究来证明。</p>
+<p>5、牙周慢性感染可能会导致HIV潜伏在感染细胞中的病毒复活及播散，对公众的人身健康造成影响，并且重庆地区HIV感染率在全国排第三位，相对其他地区感染率较高。研究口腔微生物的代谢物对HIV+人群口腔疾病的影响可以从临床降低HIV+人群口腔疾病的发生发展状态。</p>
+<p>6、研究意义：1、降低HIV+人群慢性牙周炎的发病率。2、</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1359341226@qq.com </span>
@@ -1046,10 +1136,10 @@
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>HIV患者慢性牙周炎特异菌群标志物的研究</p>
-    <p><span class="copy-title">字数:</span><span class="post-count">1.6k</span></p>
+    <p><span class="copy-title">字数:</span><span class="post-count">2.6k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="leonardo-lx">leonardo-lx</a></p>
     <p><span class="copy-title">发布时间:</span>2024-01-09, 15:02:14</p>
-    <p><span class="copy-title">最后更新:</span>2024-01-17, 17:20:09</p>
+    <p><span class="copy-title">最后更新:</span>2024-01-18, 11:36:11</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2024/01/09/HIVperiodontitis/" title="HIV患者慢性牙周炎特异菌群标志物的研究">https://leonardo-lx.github.io/2024/01/09/HIVperiodontitis/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
